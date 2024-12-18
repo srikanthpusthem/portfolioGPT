@@ -1,16 +1,14 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+  darkMode: "class", // Enables 'class' based dark mode
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/**/*.{js,jsx,ts,tsx}", // Specify the paths for your files
   ],
   theme: {
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-      },
+      fontFamily: {
+        inter: ['Inter', 'sans-serif'], // Adds Inter font globally
+      }
     },
   },
   plugins: [],
