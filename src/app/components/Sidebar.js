@@ -2,9 +2,9 @@ import { HomeIcon, BriefcaseIcon, SparklesIcon, EnvelopeIcon } from "@heroicons/
 
 const navLinks = [
   { name: "Home", href: "/", icon: HomeIcon },
-  { name: "Projects", href: "#", icon: BriefcaseIcon },
-  { name: "Skills", href: "#", icon: SparklesIcon },
-  { name: "Contact", href: "#", icon: EnvelopeIcon },
+  { name: "Projects", href: "projects", icon: BriefcaseIcon },
+  { name: "Skills", href: "skills", icon: SparklesIcon },
+  { name: "Contact", href: "contact", icon: EnvelopeIcon },
 ];
 
 export default function Sidebar() {
@@ -12,7 +12,7 @@ export default function Sidebar() {
     <aside className="w-64 h-screen bg-gray-50 dark:bg-gray-900 border-r border-gray-50 dark:border-gray-700 flex flex-col">
       {/* Header */}
       <div className="p-4 text-2xl font-bold text-gray-800 dark:text-white border-b border-gray-50 dark:border-gray-700">
-        PortfolioGPT
+        SrikanthGPT
       </div>
 
       {/* Navigation Links */}
