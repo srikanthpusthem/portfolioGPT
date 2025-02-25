@@ -1,5 +1,7 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+
+/* Tailwind base, components, utilities */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,35 +10,29 @@
   html {
     font-family: 'Inter', sans-serif;
   }
-}
+} /* <-- Make sure to close this bracket properly */
 
 /* Light Mode Styles */
 body {
   @apply bg-gray-50 text-gray-900;
-  font-family: 'Inter', sans-serif;
+  /* Smooth transition for potential dark mode toggle */
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* Dark Mode Styles */
 .dark body {
   @apply bg-gray-900 text-gray-100;
-  font-family: 'Inter', sans-serif;
+  /* Same transition for dark mode */
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* Hide scrollbar for Chrome, Safari, and Edge */
-
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
 
 /* Hide scrollbar for IE and Firefox */
 .hide-scrollbar {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
-
-.hide-scrollbar::-webkit-scrollbar {
-  display: none; /* Chrome, Safari, and Edge */
-}
-
-
-
-
-
-
