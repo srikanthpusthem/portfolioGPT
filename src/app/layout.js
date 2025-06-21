@@ -2,7 +2,7 @@ import "./globals.css";
 import Sidebar from "../app/components/Sidebar";
 
 export const metadata = {
-  title: "PortfolioGPT",
+  title: "SrikanthGPT",
   description: "A conversational portfolio to showcase projects and skills.",
 };
 
